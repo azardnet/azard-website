@@ -52,11 +52,11 @@
         border-bottom: 59px solid hsl(66 100% 40% / 1);
         position: absolute;
         opacity: 0;
-        transform: translate3d(-113px, 104px, 0px) scale3d(1,1,1);
+        transform: translate3d(-113px, 104px, 0px) scale3d(1, 1, 1);
         right: 0;
         top: 0;
         animation-name: Triangle;
-        animation-duration: 3000ms;
+        animation-duration: 2575ms;
         animation-iteration-count: 1;
         animation-delay: 500ms;
         animation-timing-function: ease-in-out;
@@ -67,42 +67,72 @@
         0% {
             opacity: 1;
             border-bottom: 59px solid hsl(66 100% 40% / 1);
-            transform: translate3d(-113px, 104px, 0px) scale3d(1,1,1);
+            transform: translate3d(-113px, 104px, 0px) scale3d(1, 1, 1);
         }
+
         5% {
-            transform: translate3d(-110px, 100px, 0px) scale3d(1,1.2,1);
+            transform: translate3d(-110px, 100px, 0px) scale3d(1, 1.2, 1);
         }
+
         10% {
-            transform: translate3d(-121px, 106px, 0px) scale3d(0.8,1,1);
+            transform: translate3d(-121px, 106px, 0px) scale3d(0.8, 1, 1);
         }
+
         15% {
-            transform: translate3d(-118px, 100px, 0px) scale3d(1.2,0.8,1);
+            transform: translate3d(-118px, 100px, 0px) scale3d(1.2, 0.8, 1);
         }
+
         20% {
-            transform: translate3d(-110px, 80px, 0px) scale3d(1,1.2,1);
+            transform: translate3d(-110px, 80px, 0px) scale3d(1, 1.2, 1);
         }
+
         25% {
-            transform: translate3d(-120px, 109px, 0px) scale3d(1.2,1,1);
+            transform: translate3d(-120px, 109px, 0px) scale3d(1.2, 1, 1);
         }
+
         30% {
-            transform: translate3d(-113px, 104px, 0px) scale3d(1,0.8,1);
+            transform: translate3d(-113px, 104px, 0px) scale3d(1, 0.8, 1);
         }
+
         35% {
-            transform: translate3d(-100px, 115px, 0px) scale3d(0.8,1,1);
+            transform: translate3d(-100px, 115px, 0px) scale3d(0.8, 1, 1);
         }
+
         40% {
-            transform: translate3d(-120px, 100px, 0px) scale3d(1.2,0.8,1);
+            transform: translate3d(-120px, 100px, 0px) scale3d(1.2, 0.8, 1);
         }
+
         45% {
-            transform: translate3d(-113px, 104px, 0px) scale3d(1,1,1);
+            transform: translate3d(-113px, 104px, 0px) scale3d(1, 1, 1);
         }
+
         50% {
             border-bottom: 59px solid hsl(32 100% 40% / 1);
+            transform: translate3d(-120px, 115px, 0px) scale3d(0.85, 0.85, 1);
         }
-        90% {
+
+        55% {
+            transform: translate3d(-120px, 104px, 0px) scale3d(1, 1.1, 1);
+        }
+
+        60% {
+            transform: translate3d(-113px, 104px, 0px) scale3d(0.9, 1, 1);
+        }
+
+        65% {
+            transform: translate3d(-113px, 104px, 0px) scale3d(1, 1, 1);
+        }
+
+        85% {
             opacity: 1;
             border-bottom: 59px solid hsl(66 100% 40% / 1);
         }
+
+        92% {
+            opacity: 1;
+            border-bottom: 59px solid hsl(66 100% 40% / 1);
+        }
+
         100% {
             opacity: 0;
             border-bottom: 59px solid hsl(66 100% 40% / 1);
@@ -110,13 +140,38 @@
     }
 
 
-    body main > svg, body main a svg {
-        opacity: 0;
+    body main>svg,
+    body main a svg {
+        opacity: 1;
+        animation-name: Svg;
+        animation-duration: 3200ms;
+    }
+
+    @keyframes Svg {
+        0% {
+            opacity: 0;
+        }
+
+        95% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+    }
+
+    body main>svg {
+        transition-delay: 2200ms;
+        transition-duration: 150ms;
+        opacity: 1;
     }
 
     body main svg path {
-        fill: hsl(32 100% 40% / 1);
+        fill: hsl(66 100% 40% / 1);
         animation-name: Logo;
+        animation-delay: 3000ms;
         animation-iteration-count: infinite;
         animation-duration: 55000ms;
     }
@@ -133,23 +188,23 @@
 
     @keyframes Logo {
         0% {
-            fill: hsl(32 100% 40% / 1);
+            fill: hsl(66 100% 40% / 1);
         }
 
         25% {
-            fill: hsl(66 100% 40% / 1);
+            fill: hsl(32 100% 40% / 1);
         }
 
         50% {
-            fill: hsl(32 100% 40% / 1);
-        }
-
-        75% {
             fill: hsl(66 100% 40% / 1);
         }
 
-        100% {
+        75% {
             fill: hsl(32 100% 40% / 1);
+        }
+
+        100% {
+            fill: hsl(66 100% 40% / 1);
         }
     }
 </style>
