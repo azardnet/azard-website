@@ -41,6 +41,7 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        z-index: 1;
     }
 
     body main:before {
@@ -188,6 +189,13 @@
         margin: auto;
     }
 
+    body canvas {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     @keyframes Logo {
         0% {
             fill: hsl(66 100% 40% / 1);
@@ -261,7 +269,7 @@
             </svg>
         </a>
     </main>
-    <canvas width="500" height="500" data-margin="20" data-type="grid" data-elementsize="2"
+    <canvas width="500" height="500" data-margin="35" data-type="grid" data-elementsize="2"
         data-color="#1d1d1d"></canvas>
     <script src="dopdots.bundle.js"></script>
     <script>
