@@ -127,16 +127,19 @@
         85% {
             opacity: 1;
             border-bottom: 59px solid hsl(66 100% 40% / 1);
+            transform: translate3d(-113px, 104px, 0px) scale3d(1, 1, 1);
         }
 
-        92% {
+        94% {
             opacity: 1;
             border-bottom: 59px solid hsl(66 100% 40% / 1);
+            transform: translate3d(-113px, 104px, 0px) scale3d(1, 0.15, 1);
         }
 
         100% {
             opacity: 0;
             border-bottom: 59px solid hsl(66 100% 40% / 1);
+            transform: translate3d(-113px, 104px, 0px) scale3d(1, 0, 1);
         }
     }
 
@@ -148,20 +151,23 @@
     }
 
     body main a svg {
-        animation-duration: 3600ms;
+        animation-duration: 3550ms;
     }
 
     @keyframes Svg {
         0% {
             opacity: 0;
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 0, 1);
         }
 
         95% {
             opacity: 0;
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 0.1, 1);
         }
 
         100% {
             opacity: 1;
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
         }
     }
 
